@@ -84,6 +84,14 @@ int main(void)
 
     	if (obs == 1){
 
+
+    		if (((get_prox(fr) > 200) && (get_prox(fl) > 200)) || ((get_prox(ll) > 200) && (get_prox(rr) > 200))){
+				turntime = 50;
+			}
+			else {
+				turntime = 500 +(rand() % 1000);
+			}
+
     		while ((get_prox(fr) > 200) || (get_prox(rr) > 600)){
     			left_motor_set_speed(-200);
     			right_motor_set_speed(200);
@@ -94,7 +102,7 @@ int main(void)
     			right_motor_set_speed(-200);
     			//obs = 1;
 			}
-    		turntime = 500 +(rand() % 1000);
+
     		chThdSleepMilliseconds(turntime);
 
     		char str[100];
