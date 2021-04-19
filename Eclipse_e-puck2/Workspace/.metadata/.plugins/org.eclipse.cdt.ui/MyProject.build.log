@@ -1,0 +1,7 @@
+15:47:39 **** Build of configuration Default for project MyProject ****
+make all 
+Makefile:18: ../e-puck2_main-processor/Makefile: No such file or directory
+make: *** No rule to make target '../e-puck2_main-processor/Makefile'. Stop.
+
+15:47:39 Build Finished (took 78ms)
+
