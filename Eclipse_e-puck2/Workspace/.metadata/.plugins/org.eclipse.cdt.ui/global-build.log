@@ -347,3 +347,27 @@ main.c:29:19: warning: unused variable 'on' [-Wunused-variable]
 make all 
 Makefile:18: ../e-puck2_main-processor/Makefile: No such file or directory
 make: *** No rule to make target '../e-puck2_main-processor/Makefile'. Stop.
+15:52:54 **** Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:41:6: warning: parameter names (without types) in function declaration
+      void set_body_led(on);
+      ^~~~
+main.c:45:6: error: 'charstr' undeclared (first use in this function); did you mean 'confstr'?
+      charstr[100];
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+      ^~~~~~~
+      confstr
+main.c:45:6: note: each undeclared identifier is reported only once for each function it appears in
+main.c:47:27: error: 'str' undeclared (first use in this function); did you mean 'sbrk'?
+      str_length = sprintf(str, "Hello World\n");
+                           ^~~
+                           sbrk
+main.c:40:19: warning: unused variable 'off' [-Wunused-variable]
+      unsigned int off = 0;
+                   ^~~
+main.c:39:19: warning: unused variable 'on' [-Wunused-variable]
+      unsigned int on = 1;
+                   ^~
+make: *** [build/obj/main.o] Error 1
