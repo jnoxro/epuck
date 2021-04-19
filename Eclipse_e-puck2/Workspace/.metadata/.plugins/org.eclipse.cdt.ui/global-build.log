@@ -185,3 +185,65 @@ make all
 16:46:41 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
+16:53:32 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  56068	   2996	   7836	  66900	  10554	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:53:39 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:49 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:63:6: error: 'str_length' undeclared (first use in this function); did you mean 'strnlen'?
+      str_length = sprintf(str, "Sensing: %d!\n",obs);
+      ^~~~~~~~~~
+      strnlen
+main.c:63:6: note: each undeclared identifier is reported only once for each function it appears in
+main.c:63:27: error: 'str' undeclared (first use in this function)
+      str_length = sprintf(str, "Sensing: %d!\n",obs);
+                           ^~~
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+make: *** [build/obj/main.o] Error 1
+17:08:51 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  56900	   2996	   7852	  67748	  108a4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:09:00 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:22 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  56932	   2996	   7852	  67780	  108c4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:17:28 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
