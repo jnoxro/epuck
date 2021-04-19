@@ -67,36 +67,42 @@ int main(void)
 
     		// sensors 0,1,6,7
 
-    		if ((get_prox(fr) > 500) || (get_prox(fl) > 500) || (get_prox(rr) > 500) || (get_prox(ll) > 500)){
+    		if ((get_prox(fr) > 200) || (get_prox(fl) > 200) || (get_prox(rr) > 600) || (get_prox(ll) > 600)){
     			obs = 1;
     		}
+    	//	if ((get_prox(fr) > 200) && (get_prox(fl) > 200)  (get_prox(rr) > 200) || (get_prox(ll) > 200)){
+		//		obs = 2;
+		//	}
 
     		chThdSleepMilliseconds(100);
 
     		char str[100];
 			int str_length;
-			str_length = sprintf(str, "Sensing: %d!\n",obs);
+			str_length = sprintf(str, "obs: %d\n",obs);
 			e_send_uart1_char(str, str_length);
     	}
 
     	if (obs == 1){
 
-    		while ((get_prox(fr) > 200) || (get_prox(rr) > 200)){
-    			left_motor_set_speed(0);
+    		while ((get_prox(fr) > 200) || (get_prox(rr) > 600)){
+    			left_motor_set_speed(-200);
     			right_motor_set_speed(200);
-    			obs = 1;
+    			//obs = 1;
 			}
-    		while ((get_prox(fl) > 200) || (get_prox(ll) > 200)){
+    		while ((get_prox(fl) > 200) || (get_prox(ll) > 600)){
     			left_motor_set_speed(200);
-    			right_motor_set_speed(0);
-    			obs = 1;
+    			right_motor_set_speed(-200);
+    			//obs = 1;
 			}
-    		turntime = 500 +(rand() % 3000);
+    		turntime = 500 +(rand() % 1000);
     		chThdSleepMilliseconds(turntime);
 
     		char str[100];
 			int str_length;
-			str_length = sprintf(str, "Sensing: %d!\n",obs);
+			str_length = sprintf(str, "obs: %d\n",obs);
+			e_send_uart1_char(str, str_length);
+
+			str_length = sprintf(str, "turntime: %d\n",turntime);
 			e_send_uart1_char(str, str_length);
 
 			obs = 0;

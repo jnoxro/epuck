@@ -247,3 +247,105 @@ make all
 17:17:28 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
+17:25:49 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57028	   2996	   7852	  67876	  10924	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:25:55 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:26:56 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57028	   2996	   7852	  67876	  10924	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:27:00 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:04 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:29:10 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:32:38 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:32:43 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:38:45 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:38:49 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:45:31 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:45:35 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:46:01 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:46:06 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
