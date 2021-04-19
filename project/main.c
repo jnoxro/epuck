@@ -28,7 +28,7 @@
 
 int main(void)
 {
-   // serial_start();
+
 
   //  clear_leds();
    // spi_comm_start();
@@ -36,7 +36,7 @@ int main(void)
     chSysInit();
     mpu_init();
 
-
+    serial_start();
     motors_init();
     //chThdSleepMilliseconds(1000);
 
@@ -51,18 +51,11 @@ int main(void)
     	chThdSleepMilliseconds(1000);
 
 
-    	//char str[100];
-    	//int str_length;
-
-    	//str_length = sprintf(str, "Hello World\n");
-    	//e_send_uart1_char(str, str_length);
-    	//void set_led(LED1,0);
-    	//chThdSleepMilliseconds(500);
-
-
-    	//int value=10;
-    	//str_length = sprintf(str, "Printing number %d!\n",value);
-    	//e_send_uart1_char(str, str_length);
+    	char str[100];
+    	int str_length;
+    	int value=10;
+    	str_length = sprintf(str, "Printing number %d!\n",value);
+    	e_send_uart1_char(str, str_length);
 
     	//set_body_led(off);
     	left_motor_set_speed(-500);
