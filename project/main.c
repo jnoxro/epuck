@@ -75,8 +75,8 @@ int main(void)
 	 unsigned int br = 3;
 
 	 // int a = 3000;
-	  int far = 85;
-	  int close = 1500;
+	  int far = 100;
+	  int close = 900; //1500
 	  int tooclose = 1700;
 
 
@@ -150,7 +150,7 @@ int main(void)
     		//int close = 1000;
 
 
-    		 if((get_prox(fr) > far) && (get_prox(fl) < close) && (get_prox(fl) > far)){
+    		 if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < close) && (get_prox(fl) > far)){
 				//If prox ranges for both sensors fall in set range between far and close, move forward
 				str_length = sprintf(str, "1");
 				e_send_uart1_char(str, str_length);
@@ -174,7 +174,7 @@ int main(void)
 				left_motor_set_speed(speed2);
 				right_motor_set_speed(speed2*2);
 			 }
-			 if((get_prox(fr) > far) && (get_prox(fl) > close)){
+/*			 if((get_prox(fr) > far) && (get_prox(fl) > close)){
 				//If prox range for fr is fine but fl value is too small meaning object too far, slow down left
 				str_length = sprintf(str, "4");
 				e_send_uart1_char(str, str_length);
@@ -189,7 +189,7 @@ int main(void)
 
 				left_motor_set_speed(speed2*2);
 				right_motor_set_speed(speed2);
-			 }
+			 }*/
     		 if((get_prox(fl) < far) && (get_prox(fr) < far) && ((get_prox(frr) > (2*far)) || (get_prox(rr) > (2*far)) || (get_prox(br) > (2*far)))){
 				//if the right/back right sensors detect, then spin clockwise
 				str_length = sprintf(str, "6");
@@ -206,14 +206,7 @@ int main(void)
 				left_motor_set_speed(-speed2);
 				right_motor_set_speed(speed2);
     		 }
-    		 if((get_prox(fr) > close) && (get_prox(fl) > close)){
-				//If fron prox both too close, reverse robot
-				str_length = sprintf(str, "8");
-				e_send_uart1_char(str, str_length);
 
-				left_motor_set_speed(-speed2);
-				right_motor_set_speed(-speed2);
-    		 }
     		 if((get_prox(fl) > (close-500)) && (get_prox(fl) < (close)) && (get_prox(fr) > (close-500)) && (get_prox(fr) < (close))){
 				//If prox ranges for both sensors fall in set range between far and close, robot stops
 				str_length = sprintf(str, "9");
@@ -222,6 +215,14 @@ int main(void)
 				left_motor_set_speed(0);
 				right_motor_set_speed(0);
     		 }
+    		 if((get_prox(fr) > close) && (get_prox(fl) > close)){
+				//If fron prox both too close, reverse robot
+				str_length = sprintf(str, "8");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(-speed2);
+				right_motor_set_speed(-speed2);
+			 }
     		 if((get_prox(fl) < far) && (get_prox(fr) < far) && (get_prox(fll) < far) && (get_prox(frr) < far) && (get_prox(ll) < far) && (get_prox(rr) < far) && (get_prox(bl) < far) && (get_prox(br) < far)){
 				//If prox ranges for both sensors fall in set range between far and close, robot spins
 				str_length = sprintf(str, "10");
