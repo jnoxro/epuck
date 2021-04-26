@@ -403,3 +403,71 @@ make all
 17:06:41 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
+17:14:39 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57300	   2996	   7852	  68148	  10a34	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:14:43 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:53 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57460	   2996	   7852	  68308	  10ad4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:25:04 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:21 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57444	   2996	   7852	  68292	  10ac4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:27:25 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:34:04 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:80:8: warning: unused variable 'tooclose' [-Wunused-variable]
+    int tooclose = 1700;
+        ^~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57380	   2996	   7852	  68228	  10a84	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:34:13 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.

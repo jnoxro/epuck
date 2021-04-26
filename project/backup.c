@@ -150,7 +150,7 @@ int main(void)
     		//int close = 1000;
 
 
-    		 if((get_prox(fr) > far) && (get_prox(fl) < close) && (get_prox(fl) > far)){
+    		 if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < close) && (get_prox(fl) > far)){
 				//If prox ranges for both sensors fall in set range between far and close, move forward
 				str_length = sprintf(str, "1");
 				e_send_uart1_char(str, str_length);
@@ -158,7 +158,7 @@ int main(void)
 				left_motor_set_speed(speed2);
 				right_motor_set_speed(speed2);
     		 }
-			 if((get_prox(fr) > far) && (get_prox(fl) < far)){
+			 if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < far)){
 				//If prox range for fr is fine but fl value is too large meaning object too far away, speed up left
 				str_length = sprintf(str, "2");
 				e_send_uart1_char(str, str_length);
@@ -166,7 +166,7 @@ int main(void)
 				left_motor_set_speed(speed2*2);
 				right_motor_set_speed(speed2);
 			 }
-			 if((get_prox(fl) > far) && (get_prox(fr) < far)){
+			 if((get_prox(fl) < close) && (get_prox(fl) > far) && (get_prox(fr) < far)){
 				//If prox range for fl is fine but fr value is too large meaning object too far away, speed up right
 				str_length = sprintf(str, "3");
 				e_send_uart1_char(str, str_length);
@@ -174,7 +174,7 @@ int main(void)
 				left_motor_set_speed(speed2);
 				right_motor_set_speed(speed2*2);
 			 }
-			 if((get_prox(fr) > far) && (get_prox(fl) > close)){
+			 if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) > close)){
 				//If prox range for fr is fine but fl value is too small meaning object too far, slow down left
 				str_length = sprintf(str, "4");
 				e_send_uart1_char(str, str_length);
@@ -182,7 +182,7 @@ int main(void)
 				left_motor_set_speed(speed2);
 				right_motor_set_speed(speed2*2);
 			 }
-			 if((get_prox(fl) > far) && (get_prox(fr) > close)){
+			 if((get_prox(fl) < close) && (get_prox(fl) > far) && (get_prox(fr) > close)){
 				//If prox range for fl is fine but fr value is too small meaning object too far, slow down right
 				str_length = sprintf(str, "5");
 				e_send_uart1_char(str, str_length);
@@ -206,7 +206,7 @@ int main(void)
 				left_motor_set_speed(-speed2);
 				right_motor_set_speed(speed2);
     		 }
-    		 if((get_prox(fr) > close) && (get_prox(fl) > close)){
+    		 if((get_prox(fr) > tooclose) && (get_prox(fl) > tooclose)){
 				//If fron prox both too close, reverse robot
 				str_length = sprintf(str, "8");
 				e_send_uart1_char(str, str_length);
@@ -214,7 +214,7 @@ int main(void)
 				left_motor_set_speed(-speed2);
 				right_motor_set_speed(-speed2);
     		 }
-    		 if((get_prox(fl) > (close-500)) && (get_prox(fl) < (close)) && (get_prox(fr) > (close-500)) && (get_prox(fr) < (close))){
+    		 if((get_prox(fl) > (close-200)) && (get_prox(fl) < (close)) && (get_prox(fr) > (close-200)) && (get_prox(fr) < (close))){
 				//If prox ranges for both sensors fall in set range between far and close, robot stops
 				str_length = sprintf(str, "9");
 				e_send_uart1_char(str, str_length);
