@@ -320,3 +320,86 @@ make all
 16:46:23 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
+17:00:00 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:79:8: error: redefinition of 'far'
+    int far = 1000;
+        ^~~
+main.c:78:8: note: previous definition of 'far' was here
+    int far = 75;
+        ^~~
+main.c:152:25: warning: comparison between pointer and integer
+        if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < close) && (get_prox(fl) > far)){
+                         ^
+main.c:152:75: warning: comparison between pointer and integer
+        if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < close) && (get_prox(fl) > far)){
+                                                                           ^
+main.c:160:22: warning: comparison between pointer and integer
+     if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < far)){
+                      ^
+main.c:168:22: warning: comparison between pointer and integer
+     if((get_prox(fl) < close) && (get_prox(fl) > far) && (get_prox(fr) < far)){
+                      ^
+main.c:176:22: warning: comparison between pointer and integer
+     if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) > close)){
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+                      ^
+main.c:176:72: warning: comparison between pointer and integer
+     if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) > close)){
+                                                                        ^
+main.c:184:22: warning: comparison between pointer and integer
+     if((get_prox(fl) < close) && (get_prox(fl) > far) && (get_prox(fr) > close)){
+                      ^
+main.c:184:72: warning: comparison between pointer and integer
+     if((get_prox(fl) < close) && (get_prox(fl) > far) && (get_prox(fr) > close)){
+                                                                        ^
+main.c:208:25: warning: comparison between pointer and integer
+        if((get_prox(fr) > close) && (get_prox(fl) > close)){
+                         ^
+main.c:208:51: warning: comparison between pointer and integer
+        if((get_prox(fr) > close) && (get_prox(fl) > close)){
+                                                   ^
+main.c:214:57: warning: comparison between pointer and integer
+     right_motor_set_speed(-200);       if((get_prox(fl) < close) && (get_prox(fl) > (2*far)) && (get_prox(fr) < close) && (get_prox(fr) > (2*far))){
+                                                         ^
+main.c:214:111: warning: comparison between pointer and integer
+     right_motor_set_speed(-200);       if((get_prox(fl) < close) && (get_prox(fl) > (2*far)) && (get_prox(fr) < close) && (get_prox(fr) > (2*far))){
+                                                                                                               ^
+make: *** [build/obj/main.o] Error 1
+17:00:59 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57172	   2996	   7852	  68020	  109b4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:01:08 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:01:16 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:38 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57172	   2996	   7852	  68020	  109b4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+17:06:41 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.

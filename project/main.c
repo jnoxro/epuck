@@ -75,8 +75,8 @@ int main(void)
 	 unsigned int br = 3;
 
 	 // int a = 3000;
-	  int x = 60;
-	  int y = 400;
+	  int far = 70;
+	  int close = 1000;
 
 
     while (1)
@@ -144,15 +144,20 @@ int main(void)
     	if (task == 2){
     		char str[100];
     		int str_length;
-    		 if((get_prox(fr) < y) && (get_prox(fr) > x) && (get_prox(fl) < y) && (get_prox(fl) > x)){
-				//If prox ranges for both sensors fall in set range between x and y, move forward
+
+    		//int far = 70;
+    		//int close = 1000;
+
+
+    		 if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < close) && (get_prox(fl) > far)){
+				//If prox ranges for both sensors fall in set range between far and close, move forward
 				str_length = sprintf(str, "1");
 				e_send_uart1_char(str, str_length);
 
 				left_motor_set_speed(200);
 				right_motor_set_speed(200);
     		 }
-			 if((get_prox(fr) < y) && (get_prox(fr) > x) && (get_prox(fl) < x)){
+			 if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) < far)){
 				//If prox range for fr is fine but fl value is too large meaning object too far away, speed up left
 				str_length = sprintf(str, "2");
 				e_send_uart1_char(str, str_length);
@@ -160,7 +165,7 @@ int main(void)
 				left_motor_set_speed(400);
 				right_motor_set_speed(200);
 			 }
-			 if((get_prox(fl) < y) && (get_prox(fl) > x) && (get_prox(fr) < x)){
+			 if((get_prox(fl) < close) && (get_prox(fl) > far) && (get_prox(fr) < far)){
 				//If prox range for fl is fine but fr value is too large meaning object too far away, speed up right
 				str_length = sprintf(str, "3");
 				e_send_uart1_char(str, str_length);
@@ -168,23 +173,23 @@ int main(void)
 				left_motor_set_speed(200);
 				right_motor_set_speed(400);
 			 }
-			 if((get_prox(fr) < y) && (get_prox(fr) > x) && (get_prox(fl) > y)){
-				//If prox range for fr is fine but fl value is too small meaning object too close, slow down left
+			 if((get_prox(fr) < close) && (get_prox(fr) > far) && (get_prox(fl) > close)){
+				//If prox range for fr is fine but fl value is too small meaning object too far, slow down left
 				str_length = sprintf(str, "4");
 				e_send_uart1_char(str, str_length);
 
 				left_motor_set_speed(100);
 				right_motor_set_speed(200);
 			 }
-			 if((get_prox(fl) < y) && (get_prox(fl) > x) && (get_prox(fr) > y)){
-				//If prox range for fl is fine but fr value is too small meaning object too close, slow down right
+			 if((get_prox(fl) < close) && (get_prox(fl) > far) && (get_prox(fr) > close)){
+				//If prox range for fl is fine but fr value is too small meaning object too far, slow down right
 				str_length = sprintf(str, "5");
 				e_send_uart1_char(str, str_length);
 
 				left_motor_set_speed(200);
 				right_motor_set_speed(100);
 			 }
-    		 if((get_prox(fl) < x) && (get_prox(fr) < x) && ((get_prox(frr) > x) || (get_prox(rr) > x) || (get_prox(br) > x))){
+    		 if((get_prox(fl) < far) && (get_prox(fr) < far) && ((get_prox(frr) > far) || (get_prox(rr) > far) || (get_prox(br) > far))){
 				//if the right/back right sensors detect, then spin clockwise
 				str_length = sprintf(str, "6");
 				e_send_uart1_char(str, str_length);
@@ -192,7 +197,7 @@ int main(void)
 				left_motor_set_speed(200);
 				right_motor_set_speed(-200);
     		 }
-    		 if((get_prox(fl) < x) && (get_prox(fr) < x) && ((get_prox(fll) > x) || (get_prox(ll) > x) || (get_prox(bl) > x))){
+    		 if((get_prox(fl) < far) && (get_prox(fr) < far) && ((get_prox(fll) > far) || (get_prox(ll) > far) || (get_prox(bl) > far))){
 				//if the left/back left sensors detect, then spin counter clockwise
 				str_length = sprintf(str, "7");
 				e_send_uart1_char(str, str_length);
@@ -200,22 +205,22 @@ int main(void)
 				left_motor_set_speed(-200);
 				right_motor_set_speed(200);
     		 }
-    		 if((get_prox(fr) > y) && (get_prox(fl) > y)){
-				//If fron prox both too close, reverse robot
+    		 if((get_prox(fr) > close) && (get_prox(fl) > close)){
+				//If fron prox both too far, reverse robot
 				str_length = sprintf(str, "8");
 				e_send_uart1_char(str, str_length);
 
 				left_motor_set_speed(-200);
 				right_motor_set_speed(-200);
     		 }
-    		 if((get_prox(fl) < y) && (get_prox(fl) > (2*x)) && (get_prox(fr) < y) && (get_prox(fr) > (2*x))){
-				//If prox ranges for both sensors fall in set range between x and y, robot stops
+/*    		 if((get_prox(fl) < close) && (get_prox(fl) > (2*far)) && (get_prox(fr) < close) && (get_prox(fr) > (2*far))){
+				//If prox ranges for both sensors fall in set range between far and close, robot stops
 				str_length = sprintf(str, "9");
 				e_send_uart1_char(str, str_length);
 
 				left_motor_set_speed(0);
 				right_motor_set_speed(0);
-    		 }
+    		 }*/
     	}
     	if (task == 3){ //test code
     		char str[100];
