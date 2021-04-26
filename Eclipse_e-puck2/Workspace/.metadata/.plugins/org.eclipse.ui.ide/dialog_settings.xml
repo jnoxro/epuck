@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/uos/Documents/epuck/project"/>
 		<item value="/home/uos/Documents/N/epuck/project"/>
 		<item value="/home/uos/Documents/N/project"/>
 		<item value="/media/psf/Documents/SmartGit/e-puck2-tps/TP2_move/src"/>

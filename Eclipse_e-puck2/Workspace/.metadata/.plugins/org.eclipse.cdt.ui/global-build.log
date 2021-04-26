@@ -1,387 +1,16 @@
-16:07:46 **** Incremental Build of configuration Default for project MyProject ****
+15:30:33 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
-16:08:35 **** Incremental Build of configuration Default for project MyProject ****
+15:32:50 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
-16:11:28 **** Incremental Build of configuration Default for project MyProject ****
+15:33:46 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
-16:17:17 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-main.c: In function 'main':
-main.c:41:6: warning: parameter names (without types) in function declaration
-      void set_body_led(on);
-      ^~~~
-main.c:40:19: warning: unused variable 'off' [-Wunused-variable]
-      unsigned int off = 0;
-                   ^~~
-main.c:39:19: warning: unused variable 'on' [-Wunused-variable]
-      unsigned int on = 1;
-                   ^~
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  48004	   2948	   6236	  57188	   df64	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:17:22 **** Incremental Build of configuration Default for project MyProject ****
+15:33:50 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
-16:19:57 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-main.c: In function 'main':
-main.c:41:6: warning: parameter names (without types) in function declaration
-      void set_body_led(on);
-      ^~~~
-main.c:54:6: error: 'str_length' undeclared (first use in this function); did you mean 'strnlen'?
-      str_length = sprintf(str, "Printing number %d!\n",value);
-      ^~~~~~~~~~
-      strnlen
-main.c:54:6: note: each undeclared identifier is reported only once for each function it appears in
-main.c:54:27: error: 'str' undeclared (first use in this function); did you mean 'sbrk'?
-      str_length = sprintf(str, "Printing number %d!\n",value);
-                           ^~~
-                           sbrk
-main.c:57:6: warning: parameter names (without types) in function declaration
-      void set_body_led(off);
-      ^~~~
-main.c:40:19: warning: unused variable 'off' [-Wunused-variable]
-      unsigned int off = 0;
-                   ^~~
-main.c:39:19: warning: unused variable 'on' [-Wunused-variable]
-      unsigned int on = 1;
-                   ^~
-../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
-make: *** [build/obj/main.o] Error 1
-16:20:52 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-main.c: In function 'main':
-main.c:41:6: warning: parameter names (without types) in function declaration
-      void set_body_led(on);
-      ^~~~
-main.c:58:6: warning: parameter names (without types) in function declaration
-      void set_body_led(off);
-      ^~~~
-main.c:40:19: warning: unused variable 'off' [-Wunused-variable]
-      unsigned int off = 0;
-                   ^~~
-main.c:39:19: warning: unused variable 'on' [-Wunused-variable]
-      unsigned int on = 1;
-                   ^~
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  48100	   2948	   6236	  57284	   dfc4	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:20:58 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-16:29:43 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-main.c: In function 'main':
-main.c:43:6: warning: parameter names (without types) in function declaration
-      void set_body_led(on);
-      ^~~~
-main.c:62:6: warning: parameter names (without types) in function declaration
-      void set_body_led(off);
-      ^~~~
-main.c:42:19: warning: unused variable 'off' [-Wunused-variable]
-      unsigned int off = 0;
-                   ^~~
-main.c:41:19: warning: unused variable 'on' [-Wunused-variable]
-      unsigned int on = 1;
-                   ^~
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  59620	   2988	  16596	  79204	  13564	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:30:53 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  59700	   2988	  16596	  79284	  135b4	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:31:05 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-16:32:11 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-16:37:07 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  51508	   2948	   6300	  60756	   ed54	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:38:08 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-16:38:16 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-16:39:14 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  51508	   2948	   6300	  60756	   ed54	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:39:33 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-16:46:37 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  52660	   2956	   6940	  62556	   f45c	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:46:41 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-16:53:32 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  56068	   2996	   7836	  66900	  10554	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-16:53:39 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:07:49 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-main.c: In function 'main':
-main.c:63:6: error: 'str_length' undeclared (first use in this function); did you mean 'strnlen'?
-      str_length = sprintf(str, "Sensing: %d!\n",obs);
-      ^~~~~~~~~~
-      strnlen
-main.c:63:6: note: each undeclared identifier is reported only once for each function it appears in
-main.c:63:27: error: 'str' undeclared (first use in this function)
-      str_length = sprintf(str, "Sensing: %d!\n",obs);
-                           ^~~
-../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
-make: *** [build/obj/main.o] Error 1
-17:08:51 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  56900	   2996	   7852	  67748	  108a4	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:09:00 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:17:22 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  56932	   2996	   7852	  67780	  108c4	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:17:28 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:25:49 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57028	   2996	   7852	  67876	  10924	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:25:55 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:26:56 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57028	   2996	   7852	  67876	  10924	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:27:00 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:04 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:29:10 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:32:38 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:32:43 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:38:45 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:38:49 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:45:31 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57012	   2996	   7852	  67860	  10914	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:45:35 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:46:01 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:46:06 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:51:11 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57044	   2996	   7852	  67892	  10934	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:51:17 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:52:59 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-[1;34mCompiling main.c[0m
-[1;34mLinking build/Project_template.elf[0m
-[1;34mCreating build/Project_template.hex[0m
-[1;34mCreating build/Project_template.bin[0m
-[1;34mCreating build/Project_template.dmp[0m
-
-   text	   data	    bss	    dec	    hex	filename
-  57044	   2996	   7852	  67892	  10934	build/Project_template.elf
-[1;34mCreating build/Project_template.list[0m
-
-[1;34mDone[0m
-17:53:04 **** Incremental Build of configuration Default for project MyProject ****
-make all 
-make: Nothing to be done for 'all'.
-17:56:30 **** Incremental Build of configuration Default for project MyProject ****
+15:37:00 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 [1;34mCompiling main.c[0m
 [1;34mLinking build/Project_template.elf[0m
@@ -394,6 +23,300 @@ make all
 [1;34mCreating build/Project_template.list[0m
 
 [1;34mDone[0m
-17:56:35 **** Incremental Build of configuration Default for project MyProject ****
+15:37:12 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:03:12 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:147:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) > y) && (get_prox(fl) < x)){
+                         ^
+main.c:147:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) > y) && (get_prox(fl) < x)){
+                                               ^
+main.c:147:69: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) > y) && (get_prox(fl) < x)){
+                                                                     ^
+main.c:147:91: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) > y) && (get_prox(fl) < x)){
+                                                                                           ^
+main.c:155:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) > x)){
+                      ^
+main.c:155:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) > x)){
+                                            ^
+main.c:155:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) > x)){
+                                                                  ^
+main.c:163:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) > x)){
+                      ^
+main.c:163:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) > x)){
+                                            ^
+main.c:163:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) > x)){
+                                                                  ^
+main.c:171:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) < y)){
+                      ^
+main.c:171:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) < y)){
+                                            ^
+main.c:171:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fr) > y) && (get_prox(fr) < x) && (get_prox(fl) < y)){
+                                                                  ^
+main.c:179:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) < y)){
+                      ^
+main.c:179:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) < y)){
+                                            ^
+main.c:179:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) < y)){
+                                                                  ^
+main.c:187:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(frr) < x) || (get_prox(rr) < x) || (get_prox(br) < x))){
+                         ^
+main.c:187:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(frr) < x) || (get_prox(rr) < x) || (get_prox(br) < x))){
+                                               ^
+main.c:187:71: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(frr) < x) || (get_prox(rr) < x) || (get_prox(br) < x))){
+                                                                       ^
+main.c:187:93: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(frr) < x) || (get_prox(rr) < x) || (get_prox(br) < x))){
+                                                                                             ^
+main.c:187:115: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(frr) < x) || (get_prox(rr) < x) || (get_prox(br) < x))){
+                                                                                                                   ^
+main.c:195:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(fll) < x) || (get_prox(ll) < x) || (get_prox(bl) < x))){
+                         ^
+main.c:195:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(fll) < x) || (get_prox(ll) < x) || (get_prox(bl) < x))){
+                                               ^
+main.c:195:71: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(fll) < x) || (get_prox(ll) < x) || (get_prox(bl) < x))){
+                                                                       ^
+main.c:195:93: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(fll) < x) || (get_prox(ll) < x) || (get_prox(bl) < x))){
+                                                                                             ^
+main.c:195:115: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > x) && (get_prox(fr) > x) && ((get_prox(fll) < x) || (get_prox(ll) < x) || (get_prox(bl) < x))){
+                                                                                                                   ^
+main.c:203:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fr) < y) && (get_prox(fl) < y)){
+                         ^
+main.c:203:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fr) < y) && (get_prox(fl) < y)){
+                                               ^
+main.c:211:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) > y) && (get_prox(fr) < x)){
+                         ^
+main.c:211:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) > y) && (get_prox(fr) < x)){
+                                               ^
+main.c:211:69: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) > y) && (get_prox(fr) < x)){
+                                                                     ^
+main.c:211:91: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if((get_prox(fl) > y) && (get_prox(fl) < x) && (get_prox(fr) > y) && (get_prox(fr) < x)){
+                                                                                           ^
+main.c:77:16: warning: unused variable 'a' [-Wunused-variable]
+   unsigned int a = 3000;
+                ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57060	   2996	   7852	  67908	  10944	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:03:43 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:77:8: warning: unused variable 'a' [-Wunused-variable]
+    int a = 3000;
+        ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57300	   2996	   7852	  68148	  10a34	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:04:04 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:38 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:45 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:01 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:05 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:14:09 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:222:7: error: 'str_length' undeclared (first use in this function); did you mean 'strnlen'?
+       str_length = sprintf(str, "%d!\n",value);
+       ^~~~~~~~~~
+       strnlen
+main.c:222:7: note: each undeclared identifier is reported only once for each function it appears in
+main.c:222:28: error: 'str' undeclared (first use in this function)
+       str_length = sprintf(str, "%d!\n",value);
+                            ^~~
+main.c:77:8: warning: unused variable 'a' [-Wunused-variable]
+    int a = 3000;
+        ^
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+make: *** [build/obj/main.o] Error 1
+16:14:36 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:77:8: warning: unused variable 'a' [-Wunused-variable]
+    int a = 3000;
+        ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  56052	   2996	   7836	  66884	  10544	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:14:40 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:26 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  56052	   2996	   7836	  66884	  10544	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:20:38 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57284	   2996	   7852	  68132	  10a24	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:20:43 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:35 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:41 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  56052	   2996	   7836	  66884	  10544	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:25:45 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:32:53 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  56164	   2996	   7836	  66996	  105b4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:32:58 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:21 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57284	   2996	   7852	  68132	  10a24	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:34:26 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:38:09 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57268	   2996	   7852	  68116	  10a14	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:38:23 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:46:14 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  57268	   2996	   7852	  68116	  10a14	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:46:23 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.

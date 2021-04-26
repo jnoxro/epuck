@@ -49,73 +49,185 @@ int main(void)
 
     /* Infinite loop. */
 
-    unsigned int fr = 0;
-    unsigned int fl = 7;
-    unsigned int rr = 1;
-    unsigned int ll = 6;
+    unsigned int task = 2;
+
+    // TASK 1 SETTINGS
+    unsigned int fr1 = 0;
+    unsigned int fl1= 7;
+    unsigned int rr1 = 1;
+    unsigned int ll1 = 6;
 
     unsigned int obs = 0;
     unsigned int turntime = 0;
+
+    unsigned int speed = 300;
+
+
+    // TASK 2 SETTINGS
+
+	 unsigned int fr = 0;
+	 unsigned int fl = 7;
+	 unsigned int frr = 1;
+	 unsigned int fll = 6;
+	 unsigned int rr = 2;
+	 unsigned int ll = 5;
+	 unsigned int bl = 4;
+	 unsigned int br = 3;
+
+	 // int a = 3000;
+	  int x = 60;
+	  int y = 400;
+
 
     while (1)
     {
 
 
-    	if (obs == 0){
-    		left_motor_set_speed(200);
-    		right_motor_set_speed(200);
 
-    		// sensors 0,1,6,7
+    	if (task == 1){
+			if (obs == 0){
+				left_motor_set_speed(speed);
+				right_motor_set_speed(speed);
 
-    		if ((get_prox(fr) > 200) || (get_prox(fl) > 200) || (get_prox(rr) > 600) || (get_prox(ll) > 600)){
-    			obs = 1;
-    		}
-    	//	if ((get_prox(fr) > 200) && (get_prox(fl) > 200)  (get_prox(rr) > 200) || (get_prox(ll) > 200)){
-		//		obs = 2;
-		//	}
+				// sensors 0,1,6,7
 
-    		chThdSleepMilliseconds(100);
+				if ((get_prox(fr1) > 200) || (get_prox(fl1) > 200) || (get_prox(rr1) > 600) || (get_prox(ll1) > 600)){
+					obs = 1;
+				}
+			//	if ((get_prox(fr) > 200) && (get_prox(fl) > 200)  (get_prox(rr) > 200) || (get_prox(ll) > 200)){
+			//		obs = 2;
+			//	}
 
-    		char str[100];
-			int str_length;
-			str_length = sprintf(str, "obs: %d\n",obs);
-			e_send_uart1_char(str, str_length);
+				chThdSleepMilliseconds(100);
+
+				char str[100];
+				int str_length;
+				str_length = sprintf(str, "obs: %d\n",obs);
+				e_send_uart1_char(str, str_length);
+			}
+
+			if (obs == 1){
+
+
+				if (((get_prox(fr1) > 200) && (get_prox(fl1) > 200)) || ((get_prox(ll1) > 200) && (get_prox(rr1) > 200))){
+					turntime = 50;
+				}
+				else {
+					turntime = 500 +(rand() % 750);
+				}
+
+				while ((get_prox(fr1) > 200) || (get_prox(rr1) > 600)){
+					left_motor_set_speed(-speed);
+					right_motor_set_speed(speed);
+					//obs = 1;
+				}
+				while ((get_prox(fl1) > 200) || (get_prox(ll1) > 600)){
+					left_motor_set_speed(speed);
+					right_motor_set_speed(-speed);
+					//obs = 1;
+				}
+
+				chThdSleepMilliseconds(turntime);
+
+				char str[100];
+				int str_length;
+				str_length = sprintf(str, "obs: %d\n",obs);
+				e_send_uart1_char(str, str_length);
+
+				str_length = sprintf(str, "turntime: %d\n",turntime);
+				e_send_uart1_char(str, str_length);
+
+				obs = 0;
+			}
     	}
 
-    	if (obs == 1){
-
-
-    		if (((get_prox(fr) > 200) && (get_prox(fl) > 200)) || ((get_prox(ll) > 200) && (get_prox(rr) > 200))){
-				turntime = 50;
-			}
-			else {
-				turntime = 500 +(rand() % 1000);
-			}
-
-    		while ((get_prox(fr) > 200) || (get_prox(rr) > 600)){
-    			left_motor_set_speed(-200);
-    			right_motor_set_speed(200);
-    			//obs = 1;
-			}
-    		while ((get_prox(fl) > 200) || (get_prox(ll) > 600)){
-    			left_motor_set_speed(200);
-    			right_motor_set_speed(-200);
-    			//obs = 1;
-			}
-
-    		chThdSleepMilliseconds(turntime);
-
+    	if (task == 2){
     		char str[100];
-			int str_length;
-			str_length = sprintf(str, "obs: %d\n",obs);
-			e_send_uart1_char(str, str_length);
+    		int str_length;
+    		 if((get_prox(fr) < y) && (get_prox(fr) > x) && (get_prox(fl) < y) && (get_prox(fl) > x)){
+				//If prox ranges for both sensors fall in set range between x and y, move forward
+				str_length = sprintf(str, "1");
+				e_send_uart1_char(str, str_length);
 
-			str_length = sprintf(str, "turntime: %d\n",turntime);
-			e_send_uart1_char(str, str_length);
+				left_motor_set_speed(200);
+				right_motor_set_speed(200);
+    		 }
+			 if((get_prox(fr) < y) && (get_prox(fr) > x) && (get_prox(fl) < x)){
+				//If prox range for fr is fine but fl value is too large meaning object too far away, speed up left
+				str_length = sprintf(str, "2");
+				e_send_uart1_char(str, str_length);
 
-			obs = 0;
+				left_motor_set_speed(400);
+				right_motor_set_speed(200);
+			 }
+			 if((get_prox(fl) < y) && (get_prox(fl) > x) && (get_prox(fr) < x)){
+				//If prox range for fl is fine but fr value is too large meaning object too far away, speed up right
+				str_length = sprintf(str, "3");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(200);
+				right_motor_set_speed(400);
+			 }
+			 if((get_prox(fr) < y) && (get_prox(fr) > x) && (get_prox(fl) > y)){
+				//If prox range for fr is fine but fl value is too small meaning object too close, slow down left
+				str_length = sprintf(str, "4");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(100);
+				right_motor_set_speed(200);
+			 }
+			 if((get_prox(fl) < y) && (get_prox(fl) > x) && (get_prox(fr) > y)){
+				//If prox range for fl is fine but fr value is too small meaning object too close, slow down right
+				str_length = sprintf(str, "5");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(200);
+				right_motor_set_speed(100);
+			 }
+    		 if((get_prox(fl) < x) && (get_prox(fr) < x) && ((get_prox(frr) > x) || (get_prox(rr) > x) || (get_prox(br) > x))){
+				//if the right/back right sensors detect, then spin clockwise
+				str_length = sprintf(str, "6");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(200);
+				right_motor_set_speed(-200);
+    		 }
+    		 if((get_prox(fl) < x) && (get_prox(fr) < x) && ((get_prox(fll) > x) || (get_prox(ll) > x) || (get_prox(bl) > x))){
+				//if the left/back left sensors detect, then spin counter clockwise
+				str_length = sprintf(str, "7");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(-200);
+				right_motor_set_speed(200);
+    		 }
+    		 if((get_prox(fr) > y) && (get_prox(fl) > y)){
+				//If fron prox both too close, reverse robot
+				str_length = sprintf(str, "8");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(-200);
+				right_motor_set_speed(-200);
+    		 }
+    		 if((get_prox(fl) < y) && (get_prox(fl) > (2*x)) && (get_prox(fr) < y) && (get_prox(fr) > (2*x))){
+				//If prox ranges for both sensors fall in set range between x and y, robot stops
+				str_length = sprintf(str, "9");
+				e_send_uart1_char(str, str_length);
+
+				left_motor_set_speed(0);
+				right_motor_set_speed(0);
+    		 }
     	}
+    	if (task == 3){ //test code
+    		char str[100];
+    		int str_length;
+    		int value = get_prox(fl);
+    		str_length = sprintf(str, "FL: %d\n",value);
+    		e_send_uart1_char(str, str_length);
 
+    		value = get_ambient_light(fl);
+    		str_length = sprintf(str, "AMB: %d\n",value);
+    		e_send_uart1_char(str, str_length);
+    	}
 
 
 
